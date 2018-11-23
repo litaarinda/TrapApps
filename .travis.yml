@@ -16,7 +16,10 @@ branches:
 #testing dll.
 #bulid
 before_script:
-
+  - cp .env.travis .env
+  - composer install --no-interaction
+  - php artisan key:generate
 #main Eksekusi
 #jalankan testing
 script:
+  - ./vendor/bin/phpunit
