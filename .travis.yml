@@ -1,0 +1,22 @@
+sudo: required
+dist: trusty
+language: php
+php:
+  - 7.1.9
+
+branches:
+  only:
+    - master #->staging server
+    - develop #->DevServer
+#sebelum melakukan eksekusi
+#install kebutuhan OS. ext mod-php dll
+#before_install:
+
+#pre Eksekusi
+#testing dll.
+#bulid
+before_script:
+
+#main Eksekusi
+#jalankan testing
+script:
